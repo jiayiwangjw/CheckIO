@@ -83,6 +83,10 @@ def checkio(text):
 
 """
 Best Solution 2
+
+letter_count = {'d': 1, 'e': 1, 'h': 1, 'l': 3, 'o': 2, 'r': 1, 'w': 3}
+max(sorted(letter_count), key=letter_count.get)
+'l'
 """
 
 def checkio(text):
