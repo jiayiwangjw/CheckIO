@@ -34,6 +34,7 @@ def checkio(str):
     return most
 
 """
+unable to address the problem of same max value
     import re
     newstring = re.sub(r'\W+', '', str)
     newstring = newstring.lower()
@@ -64,7 +65,7 @@ if __name__ == '__main__':
     print("The local tests are done.")
 
 """
-Best Solution
+Best Solution 1
 """
 
 import string
@@ -78,3 +79,13 @@ def checkio(text):
     """
     text = text.lower()
     return max(string.ascii_lowercase, key=text.count)
+
+
+"""
+Best Solution 2
+"""
+
+def checkio(text):
+    letters = [ch for ch in text.lower() if ch.isalpha()]
+    letter_count = {ch: letters.count(ch) for ch in set(letters)}
+    return max(sorted(letter_count), key=letter_count.get)
