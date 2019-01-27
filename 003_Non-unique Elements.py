@@ -4,6 +4,8 @@ in this list. To do so you will need to remove all unique elements (elements whi
 When solving this task, do not change the order of the list. Example: [1, 2, 3, 1, 3] 1 and 3 non-unique elements and result 
 will be [1, 3, 1, 3].
 
+![Alternate image text](https://static.checkio.org/media/task/media/115c9e71decd4329a8df694808fa74d0/non-unique-elements.png)
+
 Input: A list of integers.
 
 Output: An iterable of integers.
