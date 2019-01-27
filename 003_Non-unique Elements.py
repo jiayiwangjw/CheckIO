@@ -31,7 +31,7 @@ def checkio(data: list) -> list:
     #It's used for auto-testing and must return a result for check.  
 
     #replace this for solution
-    for index in range(len(data) - 1, -1, -1):
+    for index in range(len(data) - 1, -1, -1):  #from 0 to len(data)-1, reversed
         if data.count(data[index]) == 1:
             del data[index]
     return data
